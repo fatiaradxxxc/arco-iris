@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Arco-Íris</title>
+	<style>
+
+div.rainbow-text{
+display: grid;
+border: 2px solid black;
+border-radius: 10px;
+width: 1300px;
+height: 600px;;
+}
+body {
+  background-color: white;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+}
+
+.rainbow-text {
+	padding: 100px 10px 50px 150px;
+text-align: center;
+  font-family:arial rgb(21, 172, 16);
+  font-size:70px;
+    animation: rainbow 2s infinite;
+    animation-play-state: paused;
+}
+
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+  20% {
+    color: orange;
+  }
+  40% {
+    color: yellow;
+  }
+  60% {
+    color: green;
+  }
+  80% {
+    color: blue;
+  }
+  100% {
+    color: violet;
+  }
+}
+
+.rainbow-text:hover {
+  animation-play-state: running;
+}
+
+div#q1 {
+	background-image: url("imagem/Eafu9MXWsAIytnp.jpg_large");
+
+}
+</style>
+</head>
+<body>
+	<div class="rainbow-text" id="q1">ARCO-ÍRIS</div>
+</body>
+</html>
